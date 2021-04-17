@@ -121,7 +121,7 @@ cout<<"\n PENTRU CLASA Parinti_Eligibili: \n";
         Orfan orf;
        // cin>>orf;///operator >>
        // cout<<orf<<endl; /// op <<
-       cout<<"Medie totala activitati realizate zilnic: "<<orf.calculeazaMediePuncte();///functionalitate 1
+       //cout<<"Medie totala activitati realizate zilnic: "<<orf.calculeazaMediePuncte();///functionalitate 1
         // cout<<"\n ---------------------------------------------------------------------------------- \n";
         //cout<<" \n Adauga o noua jucarie : \n";
         //orf.adaugaJucarie(jucarie7);///functionalitate 2
@@ -171,6 +171,7 @@ cout<<"\n PENTRU CLASA Parinti_Eligibili: \n";
         orf1.setActivitatiZ(actv1);
         orf1.setJucarii(jucarii1);
        // cout<<"\n Noile date despre "<<orf1.getnume()<<": "<<orf1;
+         cout<<"Medie totala activitati realizate zilnic: "<<orf2.calculeazaMediePuncte();///functionalitate 1
 
 
 
