@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Proiect POO (separate clasele)" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Proiect POO (separate clasele)" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Proiect POO (separate clasele)" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Renovari_Anuale.h" />
+		<Unit filename="clasaDeriv_Gardian.cpp" />
+		<Unit filename="clasaDeriv_Gardian.h" />
+		<Unit filename="clasaDeriv_IstoricOrfelinat.cpp" />
+		<Unit filename="clasaDeriv_IstoricOrfelinat.h" />
+		<Unit filename="clasa_Jucarii.cpp" />
+		<Unit filename="clasa_Jucarii.h" />
+		<Unit filename="clasa_Orfani.cpp" />
+		<Unit filename="clasa_Orfani.h" />
+		<Unit filename="clasa_Parinti_EligibiliB.cpp" />
+		<Unit filename="clasa_Parinti_EligibiliB.h" />
+		<Unit filename="clasa_orfelinat.cpp" />
+		<Unit filename="clasa_orfelinat.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
