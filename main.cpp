@@ -226,6 +226,15 @@ cout<<"\n PENTRU CLASA Parinti_Eligibili: \n";
        I.renoveaza();
        Renovare_Exterior E;
        E.renoveaza();
+        cout<<"\n -----Constructori, operatorii =, <<,>> copy const------- \n";
+       cin>>I;
+       cout<<I<<"\n";
+       cin>>E;
+       cout<<E<<"\n";
+       Renovare_Exterior E1(2000, 5000);
+       E=E1;
+       cout<<E1<<"\n";
+       Renovare_Exterior E2(E1);
 
         cout<<"\n------------------- Pentru clasa Date_Angajati si Bonus_Sarbatori, Inrefata este clasa Date------------------------------";
         Date_Angajati date;
