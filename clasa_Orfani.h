@@ -1,7 +1,10 @@
 #pragma once
 #include <iostream>
+#include <fstream>
 #include <string.h>
 #include <vector>
+#include <list>
+#include <iterator>
 #include "clasa_Jucarii.h"
 using namespace std;
 
@@ -20,7 +23,7 @@ private:
     bool relatives;
     const int ID;
     float* punctaj_activitati;
-    vector<Jucarie> jucarii;
+    list<Jucarie> jucarii;
 
 public:
 
@@ -28,11 +31,21 @@ public:
         jucarii.push_back(jucarie);
     }
 
-    void stergeJucarie(string nume) {
-        for (auto it=jucarii.begin();it!=jucarii.end();++it) {
-            if ((*it).getNumeJ() == nume) {
-                jucarii.erase(it );
+    void stergeJucarie() {
+        ifstream fin("file1.txt");
+        ofstream file("file2.txt");
+        string nume_juc;
+        //list<Jucarie> ::iterator it;
+        cout<<"\n Din lista urmatoare ce jucarie doriti sa reciclati: ";
+        for (auto it=jucarii.begin();it!=jucarii.end();it++)
+            cout<<((*it).getNumeJ())<<" ";
+        cout<<"\n Precizati jucaria din lista: \n";
+        cin>>nume_juc;
+        for (auto it=jucarii.begin();it!=jucarii.end();it++) {
+            if ((*it).getNumeJ() == nume_juc) {
+               it= jucarii.erase(it);
             }
+
         }
     }
 
@@ -82,8 +95,8 @@ public:
     string* getActivitatiZ(){return this->activitati_zilnice;}
 
     int getId(){return this->ID;}
-    void setJucarii(vector<Jucarie> jucarii) { this->jucarii = move(jucarii); }
-    vector<Jucarie> getJucarii() { return jucarii; }
+    void setJucarii(list<Jucarie> jucarii) { this->jucarii = move(jucarii); }
+    list<Jucarie> getJucarii() { return jucarii; }
 
 
     ///Restul metodelor:
@@ -93,7 +106,7 @@ public:
                 string* activitati_zilnice, string data_sosire, char gen, bool relatives); ///c1
 
     Orfan( char* nume, string prenume ,string cod_personal, int varsta, string birth_date,
-                string* activitati_zilnice, float* punctaj_activitati, string data_sosire, char gen, bool relatives,vector< Jucarie> jucarii);///c2
+                string* activitati_zilnice, float* punctaj_activitati, string data_sosire, char gen, bool relatives,list< Jucarie> jucarii);///c2
 
     Orfan& operator=(const Orfan& orf);///operatorul =
     friend ostream& operator<<(ostream& out, const Orfan& o); // operator afisare
