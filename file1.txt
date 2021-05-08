@@ -1,0 +1,295 @@
+In centrul nostru de plasament avem: 
+ Numar camere: 200
+ Numar persoanl angajat: 110
+ Venit anual alocat: 10000
+
+ Datele complete despre copiii nostri: 
+
+ nume: Luna
+ Prenume: Hope
+ Cod Personal: 1130305068204
+ varsta: 12
+ Data Nasterii: 13/03/2005
+ Data Sosirii la Orfelinat: 21/07/2007
+ genul : F
+ Nu exista rude cunoscute deocamdata
+ Activitatile la care participa zilnic: sah
+ Activitatile la care participa zilnic: patinaj
+ Activitatile la care participa zilnic: baschet
+ Punctajul obtiunt la activitatiile zilnice : 10
+ Punctajul obtiunt la activitatiile zilnice : 7.2
+ Punctajul obtiunt la activitatiile zilnice : 9.1
+ Jucarii: 
+ Nume: Monopoly
+ Pret: 60
+ Culoare: verde
+ Stoc: 1
+ Cantitate: 23, 
+ Nume: robotel
+ Pret: 100
+ Culoare: alb
+ Stoc: 1
+ Cantitate: 40, 
+ 
+
+ nume: Wang
+ Prenume: Lola
+ Cod Personal: 107091123004
+ varsta: 10
+ Data Nasterii: 07/09/2011
+ Data Sosirii la Orfelinat: 07/09/2012
+ genul : F
+ Nu exista rude cunoscute deocamdata
+ Activitatile la care participa zilnic: sah
+ Activitatile la care participa zilnic: echitatie
+ Activitatile la care participa zilnic: baschet
+ Punctajul obtiunt la activitatiile zilnice : 8.8
+ Punctajul obtiunt la activitatiile zilnice : 9
+ Punctajul obtiunt la activitatiile zilnice : 7.5
+ Jucarii: 
+ Nume: Monopoly
+ Pret: 60
+ Culoare: verde
+ Stoc: 1
+ Cantitate: 23, 
+ Nume: frisbee
+ Pret: 29
+ Culoare: verde
+ Stoc: 0
+ Cantitate: 0, 
+ Nume: robotel
+ Pret: 100
+ Culoare: alb
+ Stoc: 1
+ Cantitate: 40, 
+ 
+
+ nume: Han
+ Prenume: De
+ Cod Personal: 1101114091234
+ varsta: 7
+ Data Nasterii: 10/11/2014
+ Data Sosirii la Orfelinat: 02/03/2015
+ genul : F
+ Exista rude
+ Activitatile la care participa zilnic: pictura
+ Activitatile la care participa zilnic: sculptura
+ Activitatile la care participa zilnic: fotografie
+ Punctajul obtiunt la activitatiile zilnice : 10
+ Punctajul obtiunt la activitatiile zilnice : 8.8
+ Punctajul obtiunt la activitatiile zilnice : 9
+ Jucarii: 
+ Nume: Monopoly
+ Pret: 60
+ Culoare: verde
+ Stoc: 1
+ Cantitate: 23, 
+ Nume: robotel
+ Pret: 100
+ Culoare: alb
+ Stoc: 1
+ Cantitate: 40, 
+ 
+
+ nume: Zana
+ Prenume: Gisele
+ Cod Personal: 101020629004
+ varsta: 14
+ Data Nasterii: 01/02/2006
+ Data Sosirii la Orfelinat: 07/06/2012
+ genul : F
+ Exista rude
+ Activitatile la care participa zilnic: sah
+ Activitatile la care participa zilnic: inot
+ Activitatile la care participa zilnic: fotbal
+ Punctajul obtiunt la activitatiile zilnice : 8
+ Punctajul obtiunt la activitatiile zilnice : 9
+ Punctajul obtiunt la activitatiile zilnice : 6.5
+ Jucarii: 
+ Nume: Monopoly
+ Pret: 60
+ Culoare: verde
+ Stoc: 1
+ Cantitate: 23, 
+ Nume: lego
+ Pret: 20
+ Culoare: verde
+ Stoc: 1
+ Cantitate: 60, 
+ Nume: puzzle
+ Pret: 60
+ Culoare: alb
+ Stoc: 0
+ Cantitate: 0, 
+ 
+
+ nume: Manole
+ Prenume: Cezar
+ Cod Personal: 1101110091234
+ varsta: 11
+ Data Nasterii: 10/11/2010
+ Data Sosirii la Orfelinat: 21/07/2012
+ genul : M
+ Nu exista rude cunoscute deocamdata
+ Activitatile la care participa zilnic: programare
+ Activitatile la care participa zilnic: lectura
+ Activitatile la care participa zilnic: fotografie
+ Punctajul obtiunt la activitatiile zilnice : 10
+ Punctajul obtiunt la activitatiile zilnice : 7.2
+ Punctajul obtiunt la activitatiile zilnice : 9.1
+ Jucarii: 
+ Nume: Monopoly
+ Pret: 60
+ Culoare: verde
+ Stoc: 1
+ Cantitate: 23, 
+ Nume: robotel
+ Pret: 100
+ Culoare: alb
+ Stoc: 1
+ Cantitate: 40, 
+ 
+
+ nume: Baron
+ Prenume: Maya
+ Cod Personal: 127021529494
+ varsta: 6
+ Data Nasterii: 27/02/2015
+ Data Sosirii la Orfelinat: 07/06/2016
+ genul : F
+ Exista rude
+ Activitatile la care participa zilnic: sah
+ Activitatile la care participa zilnic: patinaj
+ Activitatile la care participa zilnic: baschet
+ Punctajul obtiunt la activitatiile zilnice : 8
+ Punctajul obtiunt la activitatiile zilnice : 7
+ Punctajul obtiunt la activitatiile zilnice : 6.5
+ Jucarii: 
+ Nume: Monopoly
+ Pret: 60
+ Culoare: verde
+ Stoc: 1
+ Cantitate: 23, 
+ Nume: robotel
+ Pret: 100
+ Culoare: alb
+ Stoc: 1
+ Cantitate: 40, 
+ Nume: set ceainic
+ Pret: 90
+ Culoare: roz
+ Stoc: 1
+ Cantitate: 20, 
+ 
+
+ nume: Katanabe
+ Prenume: Ricky
+ Cod Personal: 1100809068204
+ varsta: 11
+ Data Nasterii: 10/08/2009
+ Data Sosirii la Orfelinat: 21/07/2012
+ genul : M
+ Nu exista rude cunoscute deocamdata
+ Activitatile la care participa zilnic: echitatie
+ Activitatile la care participa zilnic: lectura
+ Activitatile la care participa zilnic: patinaj
+ Punctajul obtiunt la activitatiile zilnice : 10
+ Punctajul obtiunt la activitatiile zilnice : 7.2
+ Punctajul obtiunt la activitatiile zilnice : 9.1
+ Jucarii: 
+ 
+
+ nume: Baron
+ Prenume: Luca
+ Cod Personal: 12702151209
+ varsta: 6
+ Data Nasterii: 27/02/2015
+ Data Sosirii la Orfelinat: 07/06/2016
+ genul : F
+ Exista rude
+ Activitatile la care participa zilnic: sah
+ Activitatile la care participa zilnic: patinaj
+ Activitatile la care participa zilnic: baschet
+ Punctajul obtiunt la activitatiile zilnice : 8
+ Punctajul obtiunt la activitatiile zilnice : 7
+ Punctajul obtiunt la activitatiile zilnice : 6.5
+ Jucarii: 
+ Nume: Monopoly
+ Pret: 60
+ Culoare: verde
+ Stoc: 1
+ Cantitate: 23, 
+ Nume: robotel
+ Pret: 100
+ Culoare: alb
+ Stoc: 1
+ Cantitate: 40, 
+ 
+
+ nume: Juna
+ Prenume: Radu
+ Cod Personal: 1100308068204
+ varsta: 12
+ Data Nasterii: 10/03/2008
+ Data Sosirii la Orfelinat: 21/07/2009
+ genul : M
+ Nu exista rude cunoscute deocamdata
+ Activitatile la care participa zilnic: programare
+ Activitatile la care participa zilnic: lectura
+ Activitatile la care participa zilnic: fotografie
+ Punctajul obtiunt la activitatiile zilnice : 10
+ Punctajul obtiunt la activitatiile zilnice : 7.2
+ Punctajul obtiunt la activitatiile zilnice : 9.1
+ Jucarii: 
+ Nume: Monopoly
+ Pret: 60
+ Culoare: verde
+ Stoc: 1
+ Cantitate: 23, 
+ Nume: lego
+ Pret: 20
+ Culoare: verde
+ Stoc: 1
+ Cantitate: 60, 
+ Nume: puzzle
+ Pret: 60
+ Culoare: alb
+ Stoc: 0
+ Cantitate: 0, 
+ 
+
+ nume: Baron
+ Prenume: Luca
+ Cod Personal: 127101120098
+ varsta: 10
+ Data Nasterii: 27/10/2011
+ Data Sosirii la Orfelinat: 07/06/2013
+ genul : M
+ Exista rude
+ Activitatile la care participa zilnic: echitatie
+ Activitatile la care participa zilnic: lectura
+ Activitatile la care participa zilnic: patinaj
+ Punctajul obtiunt la activitatiile zilnice : 10
+ Punctajul obtiunt la activitatiile zilnice : 7.2
+ Punctajul obtiunt la activitatiile zilnice : 9.1
+ Jucarii: 
+ Nume: Monopoly
+ Pret: 60
+ Culoare: verde
+ Stoc: 1
+ Cantitate: 23, 
+ Nume: frisbee
+ Pret: 29
+ Culoare: verde
+ Stoc: 0
+ Cantitate: 0, 
+ Nume: robotel
+ Pret: 100
+ Culoare: alb
+ Stoc: 1
+ Cantitate: 40, 
+ 
+
+ Jucaria a fost primita de: Han De
+
+ Pentru jucariile oferite va multumesc: Manole Cezar, Baron Maya, Katanabe Ricky, Baron Luca, Juna Radu, Baron Luca
