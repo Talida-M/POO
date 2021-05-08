@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <fstream>
 #include <string.h>
 #include <stdlib.h>
 #include <ctime>
@@ -86,6 +87,8 @@ public:
     }
 
     void renoveaza(){
+        ifstream fin("file1.txt");
+        ofstream file("file2.txt");
       cout<<"\n Seteaza bugetul renovarilor interioare din anul acesta: \n";
       cin>>buget;
       int a=seteaza_buget(buget);
@@ -144,6 +147,8 @@ public:
     }
 
     void renoveaza(){
+       // ifstream fin("file1.txt");
+        //ofstream file("file2.txt");
         cout<<"\n Alege  bugetul pus la dispozitie pentru renovarea exterioara : \n";
         cin>>this->buget;
         int a=seteaza_buget(buget);
@@ -213,6 +218,8 @@ public:
 
 
     void adaugaBonus(int bonus=10){
+       // ifstream fin("file1.txt");
+       // ofstream file("file2.txt");
         cout<<"\n Specificati anul angajarii si salariul curent: ";
        string an;
         cout<<"\n Anul :"; cin>>an;
@@ -224,9 +231,9 @@ public:
       time_t now=time(0);
         tm* ltm=localtime(&now);
         int an_curent=1900+ltm->tm_year;
-        cout<<an_curent;
+        //file<<an_curent;
         int data=stoi(an_angajare);
-        cout<<" "<<an_curent-data;
+        //file<<" "<<an_curent-data;
         if((an_curent-data)>15){
             cout<<"\n Deoarece ati fost alaturi de noi de mai bine de 15 ani la salariul actual se va adauga un bonus de 20%.\n  Noul salariu este:  ";
            bonus+=bonus;
@@ -243,16 +250,16 @@ public:
 };
 
 istream& operator>>(istream & in,Date_Angajati& dt){
-    cout<<"\n Introduceti salariul actual: ";
+    cout<<"\n Introduceti salariul actual: \n";
     in>>dt.salariu;
-    cout<<"\nAnul angajarii: ";
+    cout<<"\nAnul angajarii: \n";
     in>>dt.an_angajare;
 
 }
 
 ostream& operator<<(ostream &out,const Date_Angajati& dt){
-    out<<"\n Salariul actual: "<<dt.salariu;
-    out<<"\nAnul angajarii: "<<dt.an_angajare;
+    out<<"\n Salariul actual: \n"<<dt.salariu;
+    out<<"\nAnul angajarii: \n"<<dt.an_angajare;
 }
 
 
@@ -285,14 +292,16 @@ public:
 
 
     void adaugaBonus(int bonus){
-        cout<<"Introduceti sarbatoarea: ";
+        //ifstream fin("file1.txt");
+        //ofstream file("file2.txt");
+        cout<<"\n Introduceti sarbatoarea: \n";
         cin>>sarbatoare;
         setsarbatoare(sarbatoare);
         int sal;
-        cout<<"\n Salariul actual pe care il castigati este: ";
+        cout<<"\n Salariul actual pe care il castigati este: \n";
         cin>>sal;
          bonus =sal*10/100;
-        cout<<"\n In perioada in care veti sarbatori "<<sarbatoare<< " bonusul adaugat in contul dvs este: "<< bonus;
+        cout<<"\n In perioada in care veti sarbatori  "<<sarbatoare<< " bonusul adaugat in contul dvs este: "<< bonus<<endl;
 
 
     }
