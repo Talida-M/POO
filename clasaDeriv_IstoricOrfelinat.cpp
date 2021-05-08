@@ -1,9 +1,11 @@
 #include "clasaDeriv_IstoricOrfelinat.h"
+#include <iterator>
+#include <map>
 using namespace std;
 
 IstoricOrfelinat::IstoricOrfelinat():Orfelinat(){
     this->nume_actual="X";
-    this->listaSponsori={"Pozzoli Gabrielle", "Han Suzy","Gabani Paul","Stojovska Sarah", "Sincai Gheorghe", "Modor Patrick"};
+    this->listaSponsori={{1, "Pozzoli"}, {2,"Gabrielle"}, {3,"Han Suzy"},{4,"Gabani "},{5,"Stojovska "},{6, "Sincai Gheorghe"}, {7,"Modor Patrick"}};
     this->lista_denumiriVechi={"Miss Peregrine","Alice in Wonderland", "Wonderland"};
 }
 
@@ -34,7 +36,7 @@ istream& IstoricOrfelinat::CitireV(istream& in){
     cout<<"\n Lista de sponsori ai orfelinatului: ";
     for (int i=0;i<numar;i++){
         in>>sponsori;
-        listaSponsori.push_back(sponsori);}
+        listaSponsori.insert({i,sponsori});}
     return in;
 }
 
@@ -42,10 +44,11 @@ ostream& IstoricOrfelinat::AfisareV(ostream& out)const{
     Orfelinat::AfisareV(out);
     out<<"\n Numele actual al Orfelinatului: "<<nume_actual;
     out<<"\n Lista sponsori a orfelinatului: \n";
-    for(auto i=listaSponsori.begin();i<listaSponsori.end();i++){
-        out<<*i<<", ";}
+    //map<int, string>::iterator i;
+    for(auto i=listaSponsori.begin();i!=listaSponsori.end();i++){
+            out<<"\n "<<i->first<<" "<<i->second<<endl;}
     out<<"\n Lista denumiri vechi a orfelinatului: \n";
-    for(auto j=lista_denumiriVechi.begin();j<lista_denumiriVechi.end();j++){
+    for(auto j=lista_denumiriVechi.begin();j!=lista_denumiriVechi.end();j++){
         out<<*j<<", ";}
     return out;
 }
