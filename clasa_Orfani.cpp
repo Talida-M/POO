@@ -55,7 +55,7 @@ Orfan::Orfan( string prenume, string cod_personal, int varsta, string birth_date
 }
 
 Orfan::Orfan( char* nume, string prenume ,string cod_personal, int varsta, string birth_date,
-                string* activitati_zilnice, float* punctaj_activitati, string data_sosire, char gen, bool relatives,vector< Jucarie> jucarii):ID(Nr_Orfan++){
+                string* activitati_zilnice, float* punctaj_activitati, string data_sosire, char gen, bool relatives,list< Jucarie> jucarii):ID(Nr_Orfan++){
 
     this->nume=new char[strlen(nume)+1];
     strcpy( this->nume,nume);
@@ -155,7 +155,7 @@ ostream& operator<<(ostream& out, const Orfan& o){ ///op <<
     for(int i=0;i<3;i++)
         out<<"\n Punctajul obtiunt la activitatiile zilnice : "<<o.punctaj_activitati[i];
     out<<"\n Jucarii: ";
-    for (auto i=o.jucarii.begin();i<o.jucarii.end();i++)
+    for (auto i=o.jucarii.begin();i!=o.jucarii.end();i++)
         out<<*i<<", ";
 
     return out;
