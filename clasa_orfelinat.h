@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <fstream>
 #include <string.h>
 #include <vector>
 #include "clasa_Orfani.h"
@@ -22,6 +23,10 @@ public:
     vector<Jucarie> getJucarii() { return jucarii; }
     void setOrfani(vector<Orfan> orfani) { this->orfani = move(orfani); }
     vector<Orfan> getOrfani() { return orfani; }
+    void setnrcamere(int nr_camere){this->nr_camere=nr_camere;}
+    int getnrcamere(){return nr_camere;}
+    void setVenit(float venit_alocat){this->venit_alocat=venit_alocat;}
+    float getVenit(){return venit_alocat;}
 
 
     Orfelinat();
@@ -38,13 +43,15 @@ public:
     virtual ostream& AfisareV(ostream& out)const;
 
     void premiazaOrfan(int medieMinima, Jucarie jucarii) {
-        for (auto orfan : orfani) {
-            if (orfan.calculeazaMediePuncte() >= medieMinima) {
-                orfan.adaugaJucarie(jucarii);
-                cout<<"Primeste jucaria: "<<jucarii.getNumeJ()<<" orfanul: "<<orfan.getnume()<<endl;
+        ofstream fout("file1.txt");
+        //ofstream file("file2.txt");
+        for (auto orfan=orfani.begin(); orfan!=orfani.end();orfan++) {
+            if ((*orfan).calculeazaMediePuncte() >= medieMinima) {
+                (*orfan).adaugaJucarie(jucarii);
+                fout<<(*orfan).getnume()<<" "<<(*orfan).getPrenume()<<": primeste jucaria: "<<jucarii.getNumeJ()<<endl;
             }
             else
-                cout<<"Punctaj prea mic pentru a primi o jucarie! \n";
+                fout<<(*orfan).getnume()<<" "<<(*orfan).getPrenume()<<": punctaj prea mic pentru a primi o jucarie  \n";
         }
 
     }
