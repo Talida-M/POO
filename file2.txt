@@ -1,0 +1,88 @@
+
+ Ati ales 0 reprezentandu-l pe 
+ nume: Wang
+ Prenume: Lola
+ Cod Personal: 107091123004
+ varsta: 10
+ Data Nasterii: 07/09/2011
+ Data Sosirii la Orfelinat: 07/09/2012
+ genul : F
+ Nu exista rude cunoscute deocamdata
+ Activitatile la care participa zilnic: sah
+ Activitatile la care participa zilnic: echitatie
+ Activitatile la care participa zilnic: baschet
+ Punctajul obtiunt la activitatiile zilnice : 8.8
+ Punctajul obtiunt la activitatiile zilnice : 9
+ Punctajul obtiunt la activitatiile zilnice : 7.5
+ Jucarii: 
+ Nume: Monopoly
+ Pret: 60
+ Culoare: verde
+ Stoc: 1
+ Cantitate: 23, 
+ Nume: frisbee
+ Pret: 29
+ Culoare: verde
+ Stoc: 0
+ Cantitate: 0, 
+ Nume: robotel
+ Pret: 100
+ Culoare: alb
+ Stoc: 1
+ Cantitate: 40,  
+------------------------------------------------------------------------------------------------------------
+
+ Ati ales 2 reprezentandu-l pe 
+ nume: Zana
+ Prenume: Gisele
+ Cod Personal: 101020629004
+ varsta: 14
+ Data Nasterii: 01/02/2006
+ Data Sosirii la Orfelinat: 07/06/2012
+ genul : F
+ Exista rude
+ Activitatile la care participa zilnic: sah
+ Activitatile la care participa zilnic: inot
+ Activitatile la care participa zilnic: fotbal
+ Punctajul obtiunt la activitatiile zilnice : 8
+ Punctajul obtiunt la activitatiile zilnice : 9
+ Punctajul obtiunt la activitatiile zilnice : 6.5
+ Jucarii: 
+ Nume: Monopoly
+ Pret: 60
+ Culoare: verde
+ Stoc: 1
+ Cantitate: 23, 
+ Nume: lego
+ Pret: 20
+ Culoare: verde
+ Stoc: 1
+ Cantitate: 60, 
+ Nume: puzzle
+ Pret: 60
+ Culoare: alb
+ Stoc: 0
+ Cantitate: 0,  
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+ Ati ales 5 reprezentandu-l pe 
+ nume: Katanabe
+ Prenume: Ricky
+ Cod Personal: 1100809068204
+ varsta: 11
+ Data Nasterii: 10/08/2009
+ Data Sosirii la Orfelinat: 21/07/2012
+ genul : M
+ Nu exista rude cunoscute deocamdata
+ Activitatile la care participa zilnic: echitatie
+ Activitatile la care participa zilnic: lectura
+ Activitatile la care participa zilnic: patinaj
+ Punctajul obtiunt la activitatiile zilnice : 10
+ Punctajul obtiunt la activitatiile zilnice : 7.2
+ Punctajul obtiunt la activitatiile zilnice : 9.1
+ Jucarii: 
+ 
+
