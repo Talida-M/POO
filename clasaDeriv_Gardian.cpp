@@ -1,50 +1,83 @@
-#include "clasaDeriv_Gardian.h"
-using namespace std;
-
-istream& Gardian::CitireV(istream& in){
-    Parinti_Eligibili::CitireV(in);
-    cout<<"\n Data la care au devenit gardieni: ";
-    in>>an_ocuparePost;
-    cout<<"\nNumarul de listaOrfani pe care il au in grija: ";
-    in>>nr_orfani_in_grija;
-    cout<<"\n Lista de copii in grija: ";
-    Orfan orfan;
-    for (int i=0;i<nr_orfani_in_grija;i++){
-        in>>orfan;
-        listaOrfani.push_back(orfan);}
-    return in;
-}
-ostream& Gardian::AfisareV(ostream& out)const{
-    Parinti_Eligibili::AfisareV(out);
-    out<<"\n Data la care au devenit gardieni: ";
-    out<<an_ocuparePost;
-    out<<"\nNumarul de listaOrfani pe care il au in grija: ";
-    out<<nr_orfani_in_grija;
-    out<<"\n Lista de copii in grija: ";
-    for(auto i=listaOrfani.begin();i<listaOrfani.end();i++){
-        out<<*i<<", ";}
-    return out;
-}
+#include <iostream>
+#include <string.h>
+#include <fstream>
+#include <string>
+#include <stdlib.h>
+#include <ctime>
+#include "clasa_Parinti_EligibiliB.h"
+#include "clasa_Orfani.h"
+#include "clasa_Jucarii.h"
+#include <vector>
 
 
-Gardian::Gardian():Parinti_Eligibili(){
-    this->an_ocuparePost="DD/MM/YYYY";
-    this->nr_orfani_in_grija=0;
-    this-> listaOrfani={};
+class Gardian:public Parinti_Eligibili{
+private:
+    string an_ocuparePost;
+    int nr_orfani_in_grija;
+    vector<Orfan> listaOrfani;
+public:
+    void setdata(string an_ocuparePost){this->an_ocuparePost=an_ocuparePost;}
+    string getdata(){return this->an_ocuparePost;}
+    void setnumar(int nr_orfani_in_grija){this->nr_orfani_in_grija=nr_orfani_in_grija;}
+    int getnumar(){return this->nr_orfani_in_grija;}
+    void setlistaOrfani(vector<Orfan> listaOrfani) { this->listaOrfani = move(listaOrfani); }
+    vector<Orfan> getlistaOrfani() { return listaOrfani; }
+    Gardian( string nume, bool exista_job,string ocupatie_parinte1, string ocupatie_parinte2, string an_ocuparePost,int nr_orfani_in_grija,vector<Orfan> listaOrfani):Parinti_Eligibili(nume, exista_job,ocupatie_parinte1,ocupatie_parinte2){
+    this->an_ocuparePost=an_ocuparePost;
+    this->nr_orfani_in_grija=nr_orfani_in_grija;
+    this-> listaOrfani=listaOrfani;
 }
+    ///FUNCTIONALITATE:
+    void adoptie(string an_ocuparePost,int nr_orfani_in_grija, vector<Orfan> listaOrfani){
+        //ifstream fin("file1.txt");
+        ofstream file("file2.txt");
+        time_t now=time(0);
+        tm* ltm=localtime(&now);
+        int an_curent=1900+ltm->tm_year;
+        int data=stoi(an_ocuparePost);
+        if(an_curent-data>=10){
+            cout<<"\n Au trecut mai mult de 10 ani de cand sunteti gardieni pentru copii din orfelinatul nostru, asadar sunteti eligibili \n pentru o adoptie \n";
+            cout<<"Ati dori sa faceti o adoptie? da/nu :  \n";
+            string raspuns;
+            cin>>raspuns;
+            if (raspuns=="da"){
+                //int nr=nr_orfani_in_grija/2;
+                cout<<"\n Aveti grija de "<<nr_orfani_in_grija<<" copii. Selectati din lista  pe cine ati dori sa adoptati \n. Nu puteti adopta mai mult de 3 copii, doar in cazul in care se intampla la o distanta de minim un an. \n";
+                cout<<"\n Alegeti un numar intre 0 si "<< (nr_orfani_in_grija-1)<<" \n";
+                int numar;
+                cin>>numar;
+                file<<"\n Ati ales "<<numar<<" reprezentandu-l pe "<<listaOrfani[numar]<<" ";
+                file<<"\n------------------------------------------------------------------------------------------------------------\n";
+                bool alegere;
+                cout<<"\nAti dori sa faceti o a doua adoptie? 0/1\n";
+                cin>>alegere;
+                if(alegere==1){
+                    cout<<"\n Inca o alegere: ";
+                    cin>>numar;
+                file<<"\n Ati ales "<<numar<<" reprezentandu-l pe "<<listaOrfani[numar]<<" \n\n\n";
+                }
+                file<<"\n------------------------------------------------------------------------------------------------------------\n";
+                cout<<"\nAti dori sa faceti o ultima  adoptie? 0/1\n";
+                cin>>alegere;
+                if(alegere==1){
+                cout<<"\n Inca o alegere: ";
+                cin>>numar;
+                file<<"\n Ati ales "<<numar<<" reprezentandu-l pe "<<listaOrfani[numar]<<"\n \n\n";
+                }
 
-Gardian::Gardian(const Gardian& gard):Parinti_Eligibili(gard){
-    this->an_ocuparePost=gard.an_ocuparePost;
-    this->nr_orfani_in_grija=gard.nr_orfani_in_grija;
-    this-> listaOrfani=gard.listaOrfani;
-}
-Gardian& Gardian:: operator=(const Gardian& gd){
-    if(this!=&gd){
-        Parinti_Eligibili::operator=(gd);
-    this->an_ocuparePost=gd.an_ocuparePost;
-    this->nr_orfani_in_grija=gd.nr_orfani_in_grija;
-    this-> listaOrfani=gd.listaOrfani;
+            }
+            else
+                file<<"Va multumim pentru raspuns!";
+
+        }
     }
-    return *this;
-}
+
+    Gardian();
+    Gardian (const Gardian& gard); //cc
+    Gardian &operator =(const Gardian& gd);
+    virtual istream& CitireV(istream& in);
+    virtual ostream& AfisareV(ostream& out)const;
+    ~Gardian(){this->listaOrfani.clear();}
+};
+
 
