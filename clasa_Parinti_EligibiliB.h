@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <fstream>
 #include <string.h>
 #include <vector>
 using namespace std;
@@ -53,8 +54,10 @@ public:
     virtual ostream& AfisareV(ostream& out)const;
 
     void medie_venit(bool exista_job, float venit_anualp1, float venit_anualp2 ){
+        //ifstream in("file1.txt");
+        //ofstream file("file2.txt");
        if (exista_job==0)
-        cout<<"\n Ne pare rau, sunteti eligibili pentru o adoptie.";
+        cout<<"\n Ne pare rau,nu sunteti eligibili pentru o adoptie.";
     else{
          float medie=(venit_anualp1+venit_anualp2)/2 -10*venit_anualp1/100-10*venit_anualp2/100;
         if (medie>5000)
