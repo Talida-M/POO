@@ -59,8 +59,10 @@ public:
             }
             else
                 cout<<"\n Numar incorect, mai incearca odata!!";
-            cout<<"\n Ne pare rau, azi nu a fost ziua dumneavoastra norocoasa!!";
+
         }
+        cout<<"\n Ne pare rau, azi nu a fost ziua dumneavoastra norocoasa!!";
+
     }
 };
 
